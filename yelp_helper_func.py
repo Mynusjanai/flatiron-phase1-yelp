@@ -1,3 +1,13 @@
+import json
+import sys
+import pandas as pd
+import numpy as np
+import requests as rq
+from matplotlib import pyplot as plt
+from keys import client_id, api_key
+
+
+
 def part_4_questions_answers(results_dataframe, reviews_dataframe):
 # THIS FUNCTION IS CALLED TO DISPLAY THE PART 4 Q&A RESULTS
   
