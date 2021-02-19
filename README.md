@@ -119,13 +119,13 @@ For additional info, contact [Chaz](https://github.com/Mynusjanai) or Sunil at [
 ```
 ├── code
 │   ├── all_code.ipynb
-│   ├── data_acquisition_process.ipynb
-│   ├── final_project1_notebook.ipynb
+│   ├── data_acquisition_process.ipynb 
 │   ├── __init__.py
-│   └── yelp_helper_func.py
 ├── data  
 ├── images
 ├── README.md
 ├── yelp_presentation.pdf
+├── yelp_helper_func.py
+├── final_project1_notebook.ipynb
 ```
 
