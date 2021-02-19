@@ -1,12 +1,21 @@
+import json
+import sys
+import pandas as pd
+import numpy as np
+import requests as rq
+from matplotlib import pyplot as plt
+from keys import client_id, api_key
+
+
+
 def part_4_questions_answers(results_dataframe, reviews_dataframe):
 # THIS FUNCTION IS CALLED TO DISPLAY THE PART 4 Q&A RESULTS
-    
+  
     most_reviewed_businesses = results_dataframe.sort_values('review_count',ascending=False)[0:5][['name','review_count']]
     highest_rating = results_dataframe['rating'].max()
     high_rated_bus_count = len(results_dataframe.loc[results_dataframe['rating']==highest_rating])#results_dataframe['rating'].max()])
     bus_percent_by_rating = results_dataframe.groupby('rating').count().apply(lambda x: 100*x/x.sum(), axis=0).business_id
-    bus_percent_by_price = results_dataframe.groupby('price').count().apply(lambda x: 100*x/x.sum(), axis=0).business_id
-    #results_dataframe.sort_values('review_count',ascending=False)[0:1]['business_id'][1]
+    bus_percent_by_price = results_dataframe.groupby('price').count().apply(lambda x: 100*x/x.sum(), axis=0).business_id #results_dataframe.sort_values('review_count',ascending=False)[0:1]['business_id'][1]
     most_reviewed_text = reviews_dataframe.loc[reviews_dataframe['business_id']==results_dataframe.sort_values(by='review_count', ascending=False).head(1)['business_id'][1]].text
     max_rated_reviewed_biz = results_dataframe.loc[results_dataframe['rating']==results_dataframe['rating'].max()].sort_values(by='review_count', ascending=False).head(1).values[0][0]
     max_rated_review_text = reviews_dataframe.loc[reviews_dataframe['business_id']==max_rated_reviewed_biz].sort_values(by='time_created', ascending=False).head(1).text
@@ -16,7 +25,7 @@ def part_4_questions_answers(results_dataframe, reviews_dataframe):
     print("1. Top 5 Most reviewed businesses are:")
     print(most_reviewed_businesses)
     print()
-    print("2. Number of businesses with highest rating of {}: {}".format(highest_rating, high_rated_bus_count))
+    print("2. Number of businesses with highest rating of {}: {}".format(highest_rating,      high_rated_bus_count))
     print()
     print("3 & 4. Percent of businesses by Rating: {}".format(bus_percent_by_rating))
     print()
@@ -29,9 +38,8 @@ def part_4_questions_answers(results_dataframe, reviews_dataframe):
     print(max_rated_review_text)
     print()
     print("8. Latest review of lowest rated, lowest reviewed business:")
-    print(min_rated_review_text)
-    return 
-    
+    print(min_rated_review_text) 
+    return
     
 # INDIAN RESTAURANT PRICES
 def indian_rest_price(indian_mia, indian_ny, indian_sj, indian_chi, indian_dc, indian_la):

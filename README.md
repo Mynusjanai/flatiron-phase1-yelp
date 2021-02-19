@@ -117,20 +117,15 @@ For additional info, contact [Chaz](https://github.com/Mynusjanai) or Sunil at [
 ## Repository Structure
 
 ```
-├── analysis
-│    ├── yelp_business_analysis.ipynb
-│    └── yelp_helper_func
 ├── code
+│   ├── all_code.ipynb
+│   ├── data_acquisition_process.ipynb
+│   ├── final_project1_notebook.ipynb
 │   ├── __init__.py
-│   ├── data_preparation.py
-│   ├── visualizations.py
-│   └── eda_notebook.ipynb
-├── data
-│   └── .csv data files   
+│   └── yelp_helper_func.py
+├── data  
 ├── images
-├── yelp_project_final
-│   └── test_run_all_functions.ipynb
 ├── README.md
-
+├── yelp_presentation.pdf
 ```
 
