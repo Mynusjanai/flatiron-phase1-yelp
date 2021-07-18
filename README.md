@@ -16,9 +16,9 @@ This project analyzes the [Yelp open source data set] (https://www.yelp.com/deve
 
 ## Business Problem
 
-An investor has approached us and wanted us to come up with a business idea which uses data analysis primarily against the Yelp open source data set. They requested we come up with either a potential business in two potential markets or two potential businesses in a potential market. 
+An investor has approached us and wanted us to come up with a business idea that uses data analysis primarily against the Yelp open-source data set. They requested we come up with either a potential business in two potential markets or two potential businesses in a potential market. 
 
-We determined that we will use data analysis on the Yelp data set to solve the problem. Our overlying assumptions made are that the sample set sizes have to be large enough (>100 businesses) for data analysis to be effective against the sample population, and that the the implementation, quality and service of our proposed business idea be "as much, if not better than" existing businesses with the same profile. 
+We determined that we will use data analysis on the Yelp data set to solve the problem. Our overlying assumptions made are that the sample set sizes have to be large enough (>100 businesses) for data analysis to be effective against the sample population and that the implementation, quality, and service of our proposed business idea be "as much, if not better than" existing businesses with the same profile. 
 <br>
 <br>
 
@@ -26,7 +26,7 @@ We determined that we will use data analysis on the Yelp data set to solve the p
 
 ![img](./images/yelp_data.png)
 
-The Yelp platform, via their Application Program Interface (API), provides open source access to certain business data, when given a category and location: business's name, location, category, price level (1-4), rating (0-5) and number of reviews. The service also provides reviews per business, including the text and the time it was created. 
+The Yelp platform, via their Application Program Interface (API), provides open-source access to certain business data, when given a category and location: business's name, location, category, price level (1-4), rating (0-5), and a number of reviews. The service also provides reviews per business, including the text and the time it was created. 
 
 We used this platform, and internal python scripting, to extract the data.
 <br>
@@ -36,11 +36,11 @@ We used this platform, and internal python scripting, to extract the data.
 
 Due to the breadth of data and the openness of the potential solution, we implemented a bottoms-up approach in our analysis. We started with the entire potential data set and narrowed our results to individual solutions.  
 
-We first decided to narrow down our search by identifying the top three categories which utilize the Yelp service, from both a business advertising perspective (advertising revenue) and consumer usage perspective. Based on that list, we identified a singular target market (high-end Indian Restaurant) based on potential for effective application of data analysis on the data present. 
+We first decided to narrow down our search by identifying the top three categories which utilize the Yelp service, from both a business advertising perspective (advertising revenue) and consumer usage perspective. Based on that list, we identified a singular target market (high-end Indian Restaurant) based on the potential for effective application of data analysis on the data present. 
 
-Next, we identified six target urban markets where we would potential locate the business: Brooklyn, Miami, San Jose, Chicago, Washington D.C and Los Angeles. We then used data analysis to determine which markets already had an existing higher-concentration of high-end Indian restaurants in the area. 
+Next, we identified six target urban markets where we would potentially locate the business: Brooklyn, Miami, San Jose, Chicago, Washington D.C, and Los Angeles. We then used data analysis to determine which markets already had an existing higher concentration of high-end Indian restaurants in the area. 
 
-Once narrowed down, we finally wanted to use data analyis to determine which remaining markets already have an appreciate consumer base of demand which would support a new entrant in the market with business. In order to make comparisons, we first created "Baselines" of existing business "averages".
+Once narrowed down, we finally wanted to use data analytics to determine which remaining markets already have an appreciated consumer base of demand which would support a new entrant in the market with the business. In order to make comparisons, we first created "Baselines" of existing business "averages".
 <br>
 <br>
 
@@ -59,7 +59,7 @@ We then compared the Baseline results with the "averages" of existing high-end I
 
 ## Results
 
-To first determine which markets have an existing, established base of higher-end Indian restaurants in their respective markets, we utilized the bar graph method to visualize which markets have a the highest average "price levels" of higher-end restaurants (defined as higher "price level", higher concentration of restaurants). We determined that San Jose, Washington D.C. and Los Angeles, CA all have a higher concentration of higher-end restaurants. 
+To first determine which markets have an existing, established base of higher-end Indian restaurants in their respective markets, we utilized the bar graph method to visualize which markets have the highest average "price levels" of higher-end restaurants (defined as higher "price level", a higher concentration of restaurants). We determined that San Jose, Washington D.C., and Los Angeles, CA all have a higher concentration of higher-end restaurants. 
 <br>
 <br>
 
@@ -95,7 +95,7 @@ This analysis leads to a solid business idea recommendation in specific markets:
 Further analyses could yield additional insights to further improve our business process methods and our data analysis results:
 
 - **Better prediction of business demand.** This modeling could use already available data, such as Census demographics data and Consumer Surveys, to better determine the demand for the particular offering.
-- **Model need for business success indicators.** This modeling use other business-financials-health relevant data to incorporate into our captured businesses to determine further correlations and better predictive outcomes
+- **Model need for business success indicators.** This modeling uses other business-financials-health relevant data to incorporate into our captured businesses to determine further correlations and better predictive outcomes.
 <br>
 <br>
 
